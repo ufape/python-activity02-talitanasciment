@@ -28,16 +28,14 @@ Você digitou 3 valores pares.
 
 
 def main():
-    num_pares = 0
+   a = int(input(f"Digite o valor A: "))
+   b = int(input(f"Digite o valor B: "))
+   c = int(input(f"Digite o valor C: "))
+   d = int(input(f"Digite o valor D: "))
 
-    for i in range(6):
-        valor = int(input(f"Digite o valor {i+1}/6: "))
-    
-        if valor % 2 == 0:
-            num_pares += 1
-
-    print(f"Você digitou {num_pares} valores pares.")
-
-
+   if b > c and d > a and (c + d) > (a + b) and c > 0 and d > 0 and a %2 == 0:
+     print("Valores aceitos.")
+   else:
+     print("Valores recusados.")
 if __name__ == '__main__':
     main()
