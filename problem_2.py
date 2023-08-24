@@ -31,7 +31,6 @@ def main():
     b = float(input("Digite o valor B: "))
     c = float(input("Digite o valor C: "))
 
-
     delta = b**2 - 4*a*c
 
     if a == 0 or delta < 0:
